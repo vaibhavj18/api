@@ -26,13 +26,12 @@ public class Student_Data
 			
 		}
 	
-	/*
-	//these method can accept the any number on postman screen and sent entered no data using GET method
+	
 	@GET
 	@Path("stud/{no}")
 	
 	//@Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
-	// above line code has been accept the xml or json formate request	
+		
 	@Produces(MediaType.APPLICATION_XML)
 	public Student getStudent(@PathParam("no") int no)
 	{
@@ -42,8 +41,7 @@ public class Student_Data
 	}*/
 	
 	
-	//these method can accept the any number on postman screen and sent data using POST method
-
+	
 	
 	@POST
 	@Path("studentpost")
@@ -69,14 +67,13 @@ public class Student_Data
 		repo.update(s);
 		return s;
 		
-		/*if(repo.getStudent1(s.getId()).getId())
 		{
 			repo.create(s);
 		}
 		else
 		{
 			repo.update(s);
-		}*/
+		}
 	}
 	
 	@DELETE
